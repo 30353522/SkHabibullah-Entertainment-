@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkHabibullah Entertainment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">SK<span>H</span>ABIBULLAH</div>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+      <a href="#home">হোম</a>
+      <a href="#natok">নাটক</a>
+      <a href="#trending">ট্রেন্ডিং</a>
+      <a href="#news">বিনোদন সংবাদ</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#contact">যোগাযোগ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-content">
+    <p class="eyebrow">SKHABIBULLAH ENTERTAINMENT</p>
+    <h1>বিনোদনের নতুন ঠিকানা</h1>
+    <p>নতুন নাটক, ভিডিও, ট্রেন্ডিং কনটেন্ট ও বিনোদনের খবর—সব এক জায়গায়।</p>
+    <a class="btn" href="#natok">ভিডিও দেখুন</a>
+  </div>
+</section>
+
+<section class="section" id="natok">
+  <div class="container">
+    <div class="section-title"><span>01</span><h2>নতুন নাটক ও ভিডিও</h2></div>
+    <div class="grid">
+      <article class="card"><div class="thumb">▶</div><div class="card-body"><small>নাটক</small><h3>নতুন নাটক — শিগগিরই</h3><p>ভিডিও প্রকাশ হলে এখানে লিংক যোগ করুন।</p><a href="#" class="watch">ভিডিও দেখুন →</a></div></article>
+      <article class="card"><div class="thumb">▶</div><div class="card-body"><small>বিনোদন</small><h3>জনপ্রিয় ভিডিও</h3><p>আপনার YouTube বা Facebook ভিডিও এখানে যোগ করুন।</p><a href="#" class="watch">ভিডিও দেখুন →</a></div></article>
+      <article class="card"><div class="thumb">▶</div><div class="card-body"><small>Trending</small><h3>আজকের ট্রেন্ডিং</h3><p>সবচেয়ে আলোচিত কনটেন্টের তালিকা।</p><a href="#" class="watch">ভিডিও দেখুন →</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="trending">
+  <div class="container">
+    <div class="section-title light"><span>02</span><h2>ট্রেন্ডিং</h2></div>
+    <div class="trend-list">
+      <div class="trend"><b>01</b><div><h3>আজকের জনপ্রিয় ভিডিও</h3><p>SkHabibullah Entertainment</p></div><span>▶</span></div>
+      <div class="trend"><b>02</b><div><h3>নতুন নাটক ও বিনোদন</h3><p>SkHabibullah Entertainment</p></div><span>▶</span></div>
+      <div class="trend"><b>03</b><div><h3>সেরা মুহূর্ত</h3><p>SkHabibullah Entertainment</p></div><span>▶</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-title"><span>03</span><h2>বিনোদন সংবাদ</h2></div>
+    <div class="news-box"><h3>সর্বশেষ বিনোদনের খবর</h3><p>এখানে আপনার নিজস্ব খবর, নাটকের প্রকাশের তথ্য এবং গুরুত্বপূর্ণ আপডেট প্রকাশ করতে পারবেন।</p></div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-title"><span>04</span><h2>SkHabibullah Entertainment</h2></div>
+    <p>SkHabibullah Entertainment একটি বিনোদনভিত্তিক প্ল্যাটফর্ম। এখানে নাটক, ভিডিও, ট্রেন্ডিং কনটেন্ট ও বিনোদনের বিভিন্ন আপডেট প্রকাশ করা হবে।</p>
+  </div>
+</section>
+
+<section class="contact dark-section" id="contact">
+  <div class="container">
+    <div class="section-title light"><span>05</span><h2>যোগাযোগ</h2></div>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="আপনার নাম" required>
+      <input type="email" placeholder="ইমেইল" required>
+      <textarea placeholder="আপনার বার্তা" rows="5" required></textarea>
+      <button class="btn" type="submit">বার্তা পাঠান</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <div><strong>SkHabibullah Entertainment</strong><p>বিনোদনের নতুন ঠিকানা</p></div>
+    <p>© 2026 SkHabibullah Entertainment. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
