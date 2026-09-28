@@ -1,0 +1,544 @@
+/* =========================================
+   SkHabibullah Entertainment
+   Main Website Stylesheet
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================================
+   GENERAL
+   ========================================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 14, 0.96);
+    border-bottom: 1px solid #25252d;
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #ff3b30;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #dddddd;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff3b30;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at top, #24243a 0%, #0b0b0f 55%);
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 76px);
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff3b30;
+}
+
+.hero p {
+    color: #c7c7c7;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.btn-primary {
+    background: #ff3b30;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #e52d24;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid #55555f;
+    color: #ffffff;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+/* =========================================
+   SECTION
+   ========================================= */
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #999999;
+}
+
+/* =========================================
+   ABOUT
+   ========================================= */
+
+.about {
+    background: #101015;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    color: #cfcfcf;
+    font-size: 17px;
+}
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #15151c;
+    border: 1px solid #292933;
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #ff3b30;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaaaaa;
+}
+
+/* =========================================
+   VIDEO / CONTENT GRID
+   ========================================= */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.video-card {
+    overflow: hidden;
+    background: #15151c;
+    border: 1px solid #292933;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff3b30;
+}
+
+.video-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.video-card-content {
+    padding: 20px;
+}
+
+.video-card h3 {
+    margin-bottom: 8px;
+}
+
+.video-card p {
+    color: #999999;
+    font-size: 14px;
+}
+
+/* =========================================
+   SOCIAL SECTION
+   ========================================= */
+
+.social-section {
+    text-align: center;
+    background: #101015;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.social-btn {
+    padding: 12px 22px;
+    border: 1px solid #33333d;
+    border-radius: 8px;
+    background: #17171e;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #ff3b30;
+    border-color: #ff3b30;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact {
+    background: #0b0b0f;
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    background: #15151c;
+    border: 1px solid #292933;
+    border-radius: 14px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: #0e0e13;
+    color: #ffffff;
+    border: 1px solid #33333d;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+    border-color: #ff3b30;
+}
+
+.contact-box textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #070709;
+    border-top: 1px solid #24242c;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #888888;
+    font-size: 14px;
+}
+
+footer .footer-logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+footer .footer-logo span {
+    color: #ff3b30;
+}
+
+/* =========================================
+   MOBILE MENU
+   ========================================= */
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* =========================================
+   SCROLLBAR
+   ========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b0b0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #33333d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3b30;
+}
+
+/* =========================================
+   SELECTION
+   ========================================= */
+
+::selection {
+    background: #ff3b30;
+    color: #ffffff;
+}
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        min-height: 60px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: #101015;
+        border-top: 1px solid #292933;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 60px 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 25px 18px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-btn {
+        text-align: center;
+    }
+}
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+}
